@@ -5,78 +5,81 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>RL Shorts Uploader</title>
 <meta name="description" content="RL Shorts Uploader publishes the Azuzti channel's Rocket League Shorts to YouTube, Instagram and TikTok through their official APIs.">
+<meta name="theme-color" content="#0f1d36">
 <link rel="icon" href="favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preload" href="fonts/archivo-latin-wdth-italic.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header class="top"><div class="wrap">
-  <a class="brand" href="./"><img src="icon.png" alt="RL Shorts Uploader icon" width="36" height="36">RL Shorts Uploader</a>
-  <nav><a href="./" aria-current="page">Home</a><a href="#how">How it works</a><a href="#tiktok">TikTok integration</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a></nav>
+  <a class="brand" href="./"><span class="marque" aria-hidden="true"><i></i><i></i></span>RL Shorts Uploader</a>
+  <nav aria-label="Main"><a href="./" aria-current="page">Home</a><a href="#how">How it works</a><a href="#tiktok">TikTok integration</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a></nav>
 </div></header>
 
-<div class="hero"><div class="wrap">
-  <img src="icon.png" alt="RL Shorts Uploader icon" width="160" height="160">
-  <div class="txt">
+<div class="hero">
+  <div class="wrap">
     <h1>RL Shorts Uploader</h1>
-    <p>Rocket League Shorts from the Azuzti channel, published once a day to YouTube, Instagram and TikTok. One video, three platforms, through the official APIs only.</p>
-    <a class="btn" href="https://www.youtube.com/@Azuzti">Watch on YouTube</a><a class="btn ghost" href="https://www.instagram.com/azuzti_the_one/">Instagram</a>
+    <p class="lead">Rocket League Shorts from the Azuzti channel, published once a day to YouTube, Instagram and TikTok. One video, three platforms, through the official APIs only.</p>
+    <div class="actions"><a class="btn" href="https://www.youtube.com/@Azuzti">Watch on YouTube</a><a class="btn ghost" href="https://www.instagram.com/azuzti_the_one/"><span>Instagram</span></a></div>
   </div>
-</div></div>
+  <section id="shorts" aria-label="Latest Shorts" style="padding:0">
+    <div class="fil">
+      <a href="https://www.youtube.com/@Azuzti/shorts"><img src="img/short-01.jpg" alt="Rocket League Short thumbnail" width="360" height="640"></a>
+      <a href="https://www.youtube.com/@Azuzti/shorts"><img src="img/short-02.jpg" alt="Rocket League Short thumbnail" width="360" height="640"></a>
+      <a href="https://www.youtube.com/@Azuzti/shorts"><img src="img/short-03.jpg" alt="Rocket League Short thumbnail" width="360" height="640"></a>
+      <a href="https://www.youtube.com/@Azuzti/shorts"><img src="img/short-04.jpg" alt="Rocket League Short thumbnail" width="360" height="640" loading="lazy"></a>
+      <a href="https://www.youtube.com/@Azuzti/shorts"><img src="img/short-05.jpg" alt="Rocket League Short thumbnail" width="360" height="640" loading="lazy"></a>
+      <a href="https://www.youtube.com/@Azuzti/shorts"><img src="img/short-06.jpg" alt="Rocket League Short thumbnail" width="360" height="640" loading="lazy"></a>
+    </div>
+    <div class="wrap"><p class="legende">Latest Shorts. Each one is edited from the owner's own Rocket League matches: goals, saves, mechanics and funny moments, cut to music.</p></div>
+  </section>
+</div>
 
 <main class="wrap">
-
-<section id="shorts">
-  <h2>Latest Shorts</h2>
-  <p class="lead">Each Short is edited from the owner's own Rocket League matches: goals, saves, mechanics and funny moments, cut to music.</p>
-  <div class="grid g6">
-    <a class="shot" href="https://www.youtube.com/@Azuzti/shorts"><img src="img/short-01.jpg" alt="Rocket League Short thumbnail" loading="lazy"></a>
-    <a class="shot" href="https://www.youtube.com/@Azuzti/shorts"><img src="img/short-02.jpg" alt="Rocket League Short thumbnail" loading="lazy"></a>
-    <a class="shot" href="https://www.youtube.com/@Azuzti/shorts"><img src="img/short-03.jpg" alt="Rocket League Short thumbnail" loading="lazy"></a>
-    <a class="shot" href="https://www.youtube.com/@Azuzti/shorts"><img src="img/short-04.jpg" alt="Rocket League Short thumbnail" loading="lazy"></a>
-    <a class="shot" href="https://www.youtube.com/@Azuzti/shorts"><img src="img/short-05.jpg" alt="Rocket League Short thumbnail" loading="lazy"></a>
-    <a class="shot" href="https://www.youtube.com/@Azuzti/shorts"><img src="img/short-06.jpg" alt="Rocket League Short thumbnail" loading="lazy"></a>
-  </div>
-</section>
 
 <section id="how">
   <h2>How it works</h2>
   <p class="lead">From a recorded match to a published Short, in four steps.</p>
-  <div class="grid g3">
-    <div class="card"><span class="num">1</span><h3>Record and edit</h3><p>Highlights are clipped from the owner's own matches and edited into vertical 9:16 Shorts with music, effects and captions.</p></div>
-    <div class="card"><span class="num">2</span><h3>Quality check</h3><p>Every video is checked automatically before release: format, duration, audio levels, title and hashtags.</p></div>
-    <div class="card"><span class="num">3</span><h3>Daily queue</h3><p>Videos are released in weekly batches of 7. The queue publishes one Short per day.</p></div>
-    <div class="card"><span class="num">4</span><h3>Publish everywhere</h3><p>The same video is uploaded to YouTube (Data API v3), Instagram (Instagram API) and TikTok (Content Posting API), with the same title on each.</p></div>
-  </div>
+  <ol class="etapes">
+    <li><h3>Record and edit</h3><p>Highlights are clipped from the owner's own matches and edited into vertical 9:16 Shorts with music, effects and captions.</p></li>
+    <li><h3>Quality check</h3><p>Every video is checked automatically before release: format, duration, audio levels, title and hashtags.</p></li>
+    <li><h3>Daily queue</h3><p>Videos are released in weekly batches of 7. The queue publishes one Short per day.</p></li>
+    <li><h3>Publish everywhere</h3><p>The same video is uploaded to YouTube (Data API v3), Instagram (Instagram API) and TikTok (Content Posting API), with the same title on each.</p></li>
+  </ol>
 </section>
 
 <section id="tiktok">
   <h2>TikTok integration</h2>
   <p class="lead">How the app uses TikTok Login Kit and the Content Posting API.</p>
-  <table>
-    <tr><th>Step</th><th>What happens</th></tr>
-    <tr><td>Sign in</td><td>The account owner signs in with TikTok and approves the requested permissions. The access token is stored on the owner's computer only.</td></tr>
-    <tr><td>Scopes</td><td><code>user.info.basic</code> to show which account is connected, <code>video.upload</code> and <code>video.publish</code> to post the owner's own videos.</td></tr>
-    <tr><td>Before posting</td><td>Creator info is queried so that only the privacy levels allowed for the account are offered. Comments, Duet and Stitch stay enabled.</td></tr>
-    <tr><td>Posting</td><td>The video file and its title are sent to TikTok. The resulting post ID is saved in a local log.</td></tr>
-    <tr><td>Revoking access</td><td>Access can be removed at any time in TikTok: Settings › Security › Apps and services.</td></tr>
-  </table>
+  <div class="table">
+    <table>
+      <tr><th>Step</th><th>What happens</th></tr>
+      <tr><td>Sign in</td><td>The account owner signs in with TikTok and approves the requested permissions. The access token is stored on the owner's computer only.</td></tr>
+      <tr><td>Scopes</td><td><code>user.info.basic</code> to show which account is connected, <code>video.upload</code> and <code>video.publish</code> to post the owner's own videos.</td></tr>
+      <tr><td>Before posting</td><td>Creator info is queried so that only the privacy levels allowed for the account are offered. Comments, Duet and Stitch stay enabled.</td></tr>
+      <tr><td>Posting</td><td>The video file and its title are sent to TikTok. The resulting post ID is saved in a local log.</td></tr>
+      <tr><td>Revoking access</td><td>Access can be removed at any time in TikTok: Settings › Security › Apps and services.</td></tr>
+    </table>
+  </div>
 </section>
 
 <section id="faq">
   <h2>FAQ</h2>
-  <details><summary>Who can use RL Shorts Uploader?</summary><p>Only the owner of the Azuzti channel, to publish their own videos to their own accounts. It is not sold or distributed, and it has no public sign-up.</p></details>
-  <details><summary>What data does it collect?</summary><p>None from other people. It stores the owner's authorization tokens and a log of published videos (file name, title, post ID, date) on the owner's computer. See the <a href="privacy.html">Privacy Policy</a>.</p></details>
-  <details><summary>What content is published?</summary><p>Only Rocket League videos edited by the owner from their own gameplay. See the <a href="terms.html">Terms of Service</a>.</p></details>
-  <details><summary>How do I get in touch?</summary><p>Email <a href="mailto:xxenor00@gmail.com">xxenor00@gmail.com</a>.</p></details>
+  <div class="faq">
+    <details><summary>Who can use RL Shorts Uploader?</summary><p>Only the owner of the Azuzti channel, to publish their own videos to their own accounts. It is not sold or distributed, and it has no public sign-up.</p></details>
+    <details><summary>What data does it collect?</summary><p>None from other people. It stores the owner's authorization tokens and a log of published videos (file name, title, post ID, date) on the owner's computer. See the <a href="privacy.html">Privacy Policy</a>.</p></details>
+    <details><summary>What content is published?</summary><p>Only Rocket League videos edited by the owner from their own gameplay. See the <a href="terms.html">Terms of Service</a>.</p></details>
+    <details><summary>How do I get in touch?</summary><p>Email <a href="mailto:xxenor00@gmail.com">xxenor00@gmail.com</a>.</p></details>
+  </div>
 </section>
 
 </main>
 
 <footer><div class="wrap">
-  <span>© 2026 RL Shorts Uploader · Azuzti</span>
-  <span><a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Service</a> · <a href="mailto:xxenor00@gmail.com">Contact</a></span>
+  <span>© 2026 RL Shorts Uploader, Azuzti</span>
+  <nav aria-label="Footer"><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a><a href="mailto:xxenor00@gmail.com">Contact</a><a href="https://azuzti-dashboard.vercel.app" rel="nofollow">Owner dashboard</a></nav>
 </div></footer>
 </body>
 </html>

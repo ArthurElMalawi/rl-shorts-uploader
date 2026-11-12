@@ -15,11 +15,12 @@ Le pipeline de montage et de publication lui-même vit dans un dépôt privé (`
 | `terms.html` | Conditions d'utilisation |
 | `callback.html` | Page de retour OAuth TikTok |
 | `tiktok*.txt` | Fichier de vérification du domaine pour TikTok |
-| `style.css`, `img/`, icônes | Styles, visuels, favicon et icône Apple |
+| `style.css`, `img/`, icônes | Styles (même direction artistique que le dashboard privé : arène de nuit, cases penchées bleu / orange), visuels, favicon et icône Apple |
+| `fonts/` | Police Archivo (variable, licence OFL) hébergée sur le site : aucune requête vers un service tiers |
 
 ## Stack
 
-HTML et CSS statiques, sans framework ni build. Hébergé sur GitHub Pages (`.nojekyll`).
+HTML et CSS statiques, sans framework ni build. Hébergé sur GitHub Pages (`.nojekyll`). Le pied de page renvoie vers le dashboard privé des stats (https://azuzti-dashboard.vercel.app, accès par identifiants), dont le code vit dans `rl-shorts/dashboard`.
 
 ## Lancer en local
 
